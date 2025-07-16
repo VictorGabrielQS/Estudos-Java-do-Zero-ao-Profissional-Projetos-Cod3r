@@ -6,6 +6,13 @@
         "name": "PrimeiroPrograma",
         "request": "launch",
         "mainClass": "PrimeiroPrograma",
+        "projectName": "Estudos-Java-do-Zero-ao-Profissional-Projetos-Cod3r_3c25313b"
+      },
+      {
+        "type": "java",
+        "name": "PrimeiroPrograma",
+        "request": "launch",
+        "mainClass": "PrimeiroPrograma",
         "projectName": "Java-COMPLETO-Do-Zero-ao-Profissional-Projetos_d731a379"
       },
       {
