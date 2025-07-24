@@ -2,7 +2,7 @@ package j_wrappers;
 
 import java.util.Scanner;
 
-public class wrappers {
+public class Wrappers {
     public static void main(String[] args) {
         
 
@@ -10,9 +10,9 @@ public class wrappers {
 
         //Byte 
         Byte b = 100;
-        Long l = 1000000L;
         Short s = 10000;
-        Integer i = 1000000000;
+        Integer i = 1000000000;  // int 
+        Long l = 1000000L;
         
 
 
@@ -23,6 +23,14 @@ public class wrappers {
         System.out.println(s.toString());
         System.out.println(Integer.parseInt(entrada.next()));
         System.out.println(i * 3);
+
+
+        Boolean bo = Boolean.parseBoolean("true");
+        System.out.println(bo);
+
+
+        Character c = '#';
+        System.out.println(c + "...");
         
         
 
