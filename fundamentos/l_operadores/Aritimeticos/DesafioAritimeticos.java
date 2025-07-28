@@ -13,6 +13,8 @@ public class DesafioAritimeticos {
       int passo1 = 6 * ( 3 + 2);
       
       System.out.println(passo1);
+
+      
         
 
     }
