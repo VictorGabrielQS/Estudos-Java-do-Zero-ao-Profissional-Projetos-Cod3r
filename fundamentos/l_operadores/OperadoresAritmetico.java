@@ -1,6 +1,5 @@
-package l_operadores;
 
-public class operadoresAritmetico {
+public class OperadoresAritmetico {
     public static void main(String[] args) {
 
         System.out.println( 2 + 3 );
