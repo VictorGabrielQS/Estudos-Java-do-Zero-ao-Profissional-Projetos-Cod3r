@@ -1,4 +1,4 @@
-package l_operadores.Logicos;
+package Logicos;
 
 import java.util.Scanner;
 

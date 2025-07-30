@@ -1,4 +1,4 @@
-package l_operadores.Logicos;
+package Logicos;
 
 public class Logicos {
 

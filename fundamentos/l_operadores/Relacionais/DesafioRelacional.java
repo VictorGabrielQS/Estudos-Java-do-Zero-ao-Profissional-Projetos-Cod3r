@@ -1,4 +1,4 @@
-package l_operadores.Relacionais;
+package Relacionais;
 
 import java.util.Scanner;
 

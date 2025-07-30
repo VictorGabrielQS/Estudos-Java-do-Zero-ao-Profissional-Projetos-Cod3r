@@ -1,4 +1,4 @@
-package l_operadores.Relacionais;
+package Relacionais;
 
 public class Relacionais {
     public static void main(String[] args) {
@@ -22,7 +22,6 @@ public class Relacionais {
          
          * -----------------------------------------------
          
-         * 
          */
 
 
