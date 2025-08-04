@@ -15,6 +15,7 @@ public class DesafioTernario {
 
      System.out.println(resultado);
         
+     entrada.close();
     } 
     }
 
@@ -31,6 +32,8 @@ public class DesafioTernario {
 
         String maior = numero1 >= numero2 ? "O numero 1 e maior que o 2 " : "O numero 2 e maior que o 1 ";
         System.out.println(maior);
+
+        entrada.close();
 
        } 
     }

@@ -18,6 +18,8 @@ public class DesafioUnario {
                 System.out.println(n);
                 n--;
             }  
+
+            entrada.close();
         }
     }
 

@@ -46,6 +46,7 @@ public class DesafioLogicos {
          System.out.println("Está sem permissão? " + semPermissao);
          System.out.println("É maior de idade E tem autorização? " + temAutorizacaoIdade);
 
+         entrada.close();
      }
         
      }
@@ -68,7 +69,7 @@ public class DesafioLogicos {
             
             boolean permitido = (maiorDeIdade && temAutorizacaoVip) || temAutorizacaoEspecial;
 
-            if (maiorDeIdade && temAutorizacaoVip) {
+            if (permitido) {
                 System.out.println("✅ Acesso liberado para a área VIP!");
                 System.out.println("Motivo: Maior de idade com ingresso VIP.");
             } else if (temAutorizacaoEspecial) {
