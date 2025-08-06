@@ -17,7 +17,6 @@ public class DesafioCalculadora {
         System.out.println("3 - * (Multiplicação)");
         System.out.println("4 - / (Divisão)");
         System.out.println("5 - % (Resto da divisão)");
-        
 
         System.out.print("\nO numero desejado e : ");
         int operador = entrada.nextInt();
@@ -32,10 +31,7 @@ public class DesafioCalculadora {
             System.out.println(numero1 / numero2);
         }else if (operador == 5) {
             System.out.println(numero1 % numero2);
-        }else if () {
-            
-        }
-        else{
+        }else{
             System.out.println("Opção incorreta");
         
         }
