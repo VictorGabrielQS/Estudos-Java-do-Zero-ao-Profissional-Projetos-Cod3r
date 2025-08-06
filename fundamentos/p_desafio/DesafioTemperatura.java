@@ -45,16 +45,59 @@ public class DesafioTemperatura {
     }
 
     static class Desafio2 {
+
+        public static void main(String[] args) {
+        
+            Scanner scanner = new Scanner(System.in);
+
     
-        // 2 - Criar um programa que leia a temperatura em Celsius e converta para Fahrenheit.
+            // 2 - Criar um programa que leia a temperatura em Celsius e converta para Fahrenheit.
+    
+            System.out.print("Digite a temperatura em Celsius: ");
+            int c = scanner.nextInt();
 
-        int c = 10;
+    
+            
+            Double f = (double) 9 / 5 * c + 32;
 
-        
-        Double resultado = (double) 9 / 5 * c + 32;
-        
+            System.out.println("Temperatura em Fahrenheit: " + f + " °F");
+
+            scanner.close();
+            
+        }
         
     }
     
+
+
+
+    static class Desafio3 {
+        public static void main(String[] args) {
+         
+            // 3 - Criar um programa que leia o peso e a altura do usuário e imprima no console o IMC.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print("Insira seu peso : ");
+            double peso = scanner.nextDouble();
+
+            System.out.print("\nInsira sua altura : ");
+            double altura = scanner.nextDouble();
+
+            System.out.println("Seu calculo IMC e : ");
+
+
+
+
+
+
+
+
+
+            scanner.close();
+
+            
+        }
+    }
 }
 
