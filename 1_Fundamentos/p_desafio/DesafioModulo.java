@@ -4,22 +4,7 @@ import java.util.Scanner;
 
 public class DesafioModulo {
 
-    public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println(
-                "Escolha o desafio que deseja executar : \n1 - Desafio Temperatura em Fahrenheit convertida para Celsius.\n2 - Desafio Temperatura em Celsius convertida para Fahrenheit.\n3 - Desafio Calculador IMC.\n4 - Desafio Calculadora ao quadrado e ao cubo.\n5 - Desafio calculadora da área de um triangulo\n6 - Desafio Calculadora de equações do segundo grau\n");
-        System.out.print("Opção desejada : ");
-        int opcao = scanner.nextInt();
-
-        if (opcao == 1) {
-            Desafio1 desafio1 = new Desafio1();
-            desafio1.main(args);
-        }
-
-    }
-
+  
     static class Desafio1 {
 
         public static void main(String[] args) {
@@ -165,4 +150,6 @@ public class DesafioModulo {
 
         }
     }
+
+
 }
