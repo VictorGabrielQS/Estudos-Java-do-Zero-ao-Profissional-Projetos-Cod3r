@@ -14,7 +14,7 @@ public class DesafioDiaDaSemana {
         System.out.println("Dia dessa semana e 1!");
         }else if (diaDaSemana.equals( "segunda")){
             System.out.println("Dia dessa semana e 2!");
-        } else if (diaDaSemana.equals( "terça")) {
+        } else if (diaDaSemana.equals( "terça") || diaDaSemana.equals("terca")) {
             System.out.println("Dia dessa semana e 3!");
         } else if (diaDaSemana.equals( "quarta") ){
             System.out.println("Dia dessa semana e 4!");
@@ -24,6 +24,8 @@ public class DesafioDiaDaSemana {
             System.out.println("Dia dessa semana e 6!");
         } else if (diaDaSemana.equals( "sabado") ){
             System.out.println("Dia dessa semana e 7!");
+        }else{
+            System.out.println("Dia invalido!");
         }
 
         scanner.close();
