@@ -1,6 +1,7 @@
 package e_While;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class DesafioWhile {
 
@@ -15,20 +16,29 @@ public class DesafioWhile {
 
         int notaTotal = 0;
         int quantidadeNotasInseridas = 0;
-        int[] notasInseridas= new int[quantidadeNotasInseridas];
+        ArrayList<Integer> notasInseridas = new ArrayList<>();
         int nota = 0;
 
-        while (nota == -1) {
+        while (nota != -1) {
 
-        System.out.println("Insira a nota : ");
+        System.out.print("Insira a nota : ");
         nota = scanner.nextInt();
-        notaTotal += nota;
+      
+        if (nota <= 10 && nota >= 0 && nota != -1) {
+            notaTotal += nota;
 
-        quantidadeNotasInseridas ++;
-        notasInseridas[quantidadeNotasInseridas] = nota;
+            notasInseridas.add(nota);
+            quantidadeNotasInseridas++;
+        }
+        
 
 
     }
+    
+    System.out.println("Valor total da nota : " + notaTotal );
+    System.out.println("Total de notas inseridas : " + quantidadeNotasInseridas);
+    System.out.println("Notas inseridas : " + notasInseridas);
+    System.out.println("A Media e : " + notaTotal / quantidadeNotasInseridas );
 
         scanner.close();
 
