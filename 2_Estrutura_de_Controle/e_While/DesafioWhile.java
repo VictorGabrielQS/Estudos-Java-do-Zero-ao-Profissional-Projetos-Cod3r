@@ -29,6 +29,8 @@ public class DesafioWhile {
 
             notasInseridas.add(nota);
             quantidadeNotasInseridas++;
+        }else if(nota != -1){
+            System.out.println("Nota Inválida !!! ;D");
         }
         
 
@@ -40,7 +42,7 @@ public class DesafioWhile {
     System.out.println("Notas inseridas : " + notasInseridas);
     System.out.println("A Media e : " + notaTotal / quantidadeNotasInseridas );
 
-        scanner.close();
+    scanner.close();
 
     }
 }
