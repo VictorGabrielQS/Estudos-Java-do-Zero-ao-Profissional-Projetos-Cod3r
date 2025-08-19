@@ -1,4 +1,5 @@
-public class i_break {
+package i_Break;
+public class Break {
 
     public static void main(String[] args) {
 
@@ -9,11 +10,11 @@ public class i_break {
             
             if (numeros[i] == 30) {
                 System.out.println("Achei o numero 30!");
-                break;
+                break; // se não tivesse o break ele continuaria executando 
             }
             System.out.println("Verificando número : " + numeros[i]);
-
         }
+        System.out.println("Fim");
         
     }
 }
