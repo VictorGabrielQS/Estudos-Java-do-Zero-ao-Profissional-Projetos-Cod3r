@@ -5,68 +5,94 @@ import java.util.Scanner;
 public class DesafiosModulo {
 
     static class Desafio1 {
-    public static void main(String[] args) {
-     
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.print("DIgite um numero : ");
-        int numero = scanner.nextInt();
+        public static void main(String[] args) {
 
-        if (numero <= 10) {
-            System.out.println("O numero esta entre 10");
-        }else{
-        System.out.println("O numero não esta entre 10");
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print("DIgite um numero : ");
+            int numero = scanner.nextInt();
+
+            if (numero <= 10) {
+                System.out.println("O numero esta entre 10");
+            } else {
+                System.out.println("O numero não esta entre 10");
+            }
+
+            if (numero % 2 == 0) {
+                System.out.println("E o numero e par ");
+
+            } else {
+                System.out.println("O numero e Impar");
+            }
+
         }
-
-        if (numero % 2 == 0) {
-            System.out.println("E o numero e par ");
-            
-        }else{
-            System.out.println("O numero e Impar");
-        }
-
     }
-    }
-
-
 
     static class Desafio2 {
-    public static void main(String[] args) {
-     
-        int ano = 2100;
+        public static void main(String[] args) {
 
-        if ( (ano % 400 == 0) || (ano % 4 == 0 && ano % 100 != 0) ) {
-            System.out.println("O ano e bissexto ... ");
-            
-        }else{
-            System.out.println("O ano não e bissexto...");
+            int ano = 2100;
+
+            if ((ano % 400 == 0) || (ano % 4 == 0 && ano % 100 != 0)) {
+                System.out.println("O ano e bissexto ... ");
+
+            } else {
+                System.out.println("O ano não e bissexto...");
+            }
+
         }
-
-        
-    }  
     }
-
-
 
     static class Desafio3 {
-    public static void main(String[] args) {
-     
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.print("Digite a primeira nota : ");
-        int nota1 = scanner.nextInt();
-        
-        
-        System.out.print("Digite a primeira nota : ");
-        int nota2 = scanner.nextInt();
+        public static void main(String[] args) {
 
+            Scanner scanner = new Scanner(System.in);
 
-        int media = (nota1 + nota2 ) / 2 ;
+            System.out.print("Digite a primeira nota : ");
+            double nota1 = scanner.nextInt();
 
-        System.out.println("A media e : " + media);
+            System.out.print("Digite a primeira nota : ");
+            double nota2 = scanner.nextInt();
 
+            double media = (nota1 + nota2) / 2;
 
+            System.out.println("A media e : " + media);
+
+            if (media >= 7) {
+                System.out.println("Aprovado ... ");
+            } else if (media < 7 && media > 4) {
+                System.out.println("Recuperação ...");
+            } else {
+                System.out.println("Reprovado ...");
+            }
+
+        }
     }
+
+    
+    static class Desafio4 {
+        public static void main(String[] args) {
+            int numero = 17; // você pode trocar pelo número que quiser
+            boolean ehPrimo = true;
+
+            if (numero <= 1) {
+                ehPrimo = false; // 0 e 1 não são primos
+            } else {
+                for (int i = 2; i < numero; i++) {
+                    if (numero % i == 0) {
+                        ehPrimo = false; // achou um divisor além de 1 e ele mesmo
+                        break;
+                    }
+                }
+            }
+
+            if (ehPrimo) {
+                System.out.println(numero + " é primo!");
+            } else {
+                System.out.println(numero + " não é primo!");
+            }
+        }
     }
+
 
 }
