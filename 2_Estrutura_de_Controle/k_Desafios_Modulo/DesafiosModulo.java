@@ -72,27 +72,33 @@ public class DesafiosModulo {
     
     static class Desafio4 {
         public static void main(String[] args) {
-            int numero = 17; // você pode trocar pelo número que quiser
+        
+            int numero = 21;
             boolean ehPrimo = true;
 
             if (numero <= 1) {
-                ehPrimo = false; // 0 e 1 não são primos
-            } else {
+                ehPrimo = false;
+            }else{
                 for (int i = 2; i < numero; i++) {
                     if (numero % i == 0) {
-                        ehPrimo = false; // achou um divisor além de 1 e ele mesmo
+                        ehPrimo = false;
                         break;
-                    }
-                }
+            }
+          }
+                
             }
 
             if (ehPrimo) {
-                System.out.println(numero + " é primo!");
-            } else {
-                System.out.println(numero + " não é primo!");
+                System.out.println("O Numero e primo ...");
+            }else{
+                System.out.println("O Numero não e primo ...");
             }
+        
+        
         }
     }
 
+
+    
 
 }
