@@ -99,6 +99,47 @@ public class DesafiosModulo {
     }
 
 
+    static class Desafio5 {
+    
+        public static void main(String[] args) {
+
+            int numero = 17;
+            boolean ehPrimo = true;
+
+            switch (numero) {
+
+                case 0:
+                case 1:
+                    ehPrimo = false;
+                    break;
+
+                case 2:
+                    ehPrimo = true;
+                    System.out.println("Selcionado o Numero 2 ...");
+                    break;
+
+                default:
+                    for (int i = 2; i <= Math.sqrt(numero); i++) {
+                        System.out.println("Testando divisor: " + i);
+                        if (numero % i == 0) {
+                            ehPrimo = false;
+                            break;
+                        }
+                    }
+
+                    break;
+            }
+
+            if (ehPrimo) {
+                System.out.println("O Numero e Primo ... ");
+            } else {
+                System.out.println("O Numero não e Primo ... ");
+
+            }
+
+        }
+        
+    }
     
 
 }
