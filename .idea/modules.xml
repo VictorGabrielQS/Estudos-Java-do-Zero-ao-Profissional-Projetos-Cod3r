@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1_Fundamentos/1_Fundamentos.iml" filepath="$PROJECT_DIR$/1_Fundamentos/1_Fundamentos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_Classes_e_Metodos/3_Classes_e_Metodos.iml" filepath="$PROJECT_DIR$/3_Classes_e_Metodos/3_Classes_e_Metodos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estudos.iml" filepath="$PROJECT_DIR$/Estudos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1_Fundamentos/l_operadores/l_operadores.iml" filepath="$PROJECT_DIR$/1_Fundamentos/l_operadores/l_operadores.iml" />
+    </modules>
+  </component>
+</project>
