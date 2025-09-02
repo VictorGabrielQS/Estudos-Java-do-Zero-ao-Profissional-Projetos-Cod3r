@@ -1,4 +1,4 @@
-package f_Desafio_Modulo.Desafio2;
+package f_Desafios_Construtores.Desafio2;
 
 public class Main {
     public static void main(String[] args) {

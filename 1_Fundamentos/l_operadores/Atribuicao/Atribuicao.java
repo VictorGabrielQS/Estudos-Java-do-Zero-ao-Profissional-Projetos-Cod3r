@@ -1,8 +1,8 @@
-package Atribuicao;
+package l_operadores.Atribuicao;
 
 public class Atribuicao {
     public static void main(String[] args) {
-        
+
         int a = 10;
         int b = 5;
         String c = "Hello";
@@ -17,7 +17,7 @@ public class Atribuicao {
 
         System.out.println(c = d);
         System.out.println(c += d);
-       
+
 
     }
 }

@@ -1,4 +1,4 @@
-package Logicos;
+package l_operadores.Logicos;
 
 public class Logicos {
 
@@ -7,7 +7,7 @@ public class Logicos {
     // ! - Negação lógica
 
     public static void main(String[] args) {
-     
+
         boolean condicao1 = true;
         boolean condicao2 = 3 > 7; // false 
 
@@ -17,7 +17,6 @@ public class Logicos {
         System.out.println(!condicao1); //false
         System.out.println(!condicao2); // true
 
-        
 
         // Tabela verdade E (AND) - && 
         System.out.println("\nTabela Verdade E (AND) :");
@@ -46,11 +45,8 @@ public class Logicos {
         // Tabela verdade OU Exclucivo (XOR) - !
         System.out.println("\nTabela Verdade NOT :");
         System.out.println(!false);
-        System.out.println(!true );
-    
+        System.out.println(!true);
 
-
-        
 
     }
 }

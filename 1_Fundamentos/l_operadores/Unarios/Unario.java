@@ -1,4 +1,4 @@
-package Unarios;
+package l_operadores.Unarios;
 
 public class Unario {
     public static void main(String[] args) {
@@ -12,8 +12,6 @@ public class Unario {
         System.out.println(a);
         System.out.println(b);
 
-        
-        
 
         int x = 10;
 
