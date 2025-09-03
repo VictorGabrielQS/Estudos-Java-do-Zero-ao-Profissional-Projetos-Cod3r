@@ -3,20 +3,21 @@ package o_Desafio_Modulo.Desafio1;
 public class Jantar {
     public static void main(String[] args) {
 
-        // Metodo main
+        Pessoa p1 = new Pessoa("Victor", 82.00);
 
-        Pessoa pessoa = new Pessoa("Victor", 83.0);
+        Comida comida1 = new Comida("Maçã", 0.50);
 
-        Comida arroz = new Comida("Arroz", 0.250);
-        Comida feijao = new Comida("Feijão", 0.300);
+        Comida comida2 = new Comida("Pera", 0.50);
 
-        System.out.println(pessoa.nome + " pesa " + pessoa.peso + " kg");
 
-        pessoa.comer(arroz);
-        pessoa.comer(feijao);
+        p1.comer(comida1);
 
-        System.out.println("Depois do jantar...");
-        System.out.println(pessoa.nome + " agora pesa " + pessoa.peso + " kg");
+        p1.comer(comida2);
+
+
+        System.out.println("Peso da pessoa 1 após comer e : " + p1.peso);
+
+        System.out.println("A Pessoa 1 consumiu as seguintes comidas : " + p1.comidaCosumidas());
 
     }
 }
