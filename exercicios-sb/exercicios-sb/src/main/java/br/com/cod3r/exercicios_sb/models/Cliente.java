@@ -7,7 +7,7 @@ public class Cliente {
     private String cpf;
 
 
-    public Cliente(String cpf, String nome, int id) {
+    public Cliente(int id ,String nome , String cpf) {
         this.cpf = cpf;
         this.nome = nome;
         this.id = id;
