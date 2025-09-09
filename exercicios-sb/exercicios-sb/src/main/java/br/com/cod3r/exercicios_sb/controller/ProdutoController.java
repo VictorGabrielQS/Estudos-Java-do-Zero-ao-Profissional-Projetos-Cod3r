@@ -3,8 +3,11 @@ package br.com.cod3r.exercicios_sb.controller;
 
 import br.com.cod3r.exercicios_sb.models.Produto;
 import br.com.cod3r.exercicios_sb.repository.ProdutoRepository;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 // -- Controller responsavel por gerenciar produtos
 // - A anotacao @RestController indica que esta classe e um controlador REST
@@ -28,10 +31,6 @@ public class ProdutoController {
     private ProdutoRepository produtoRepository;
 
 
-
-
-
-
     // - O metodo novoProduto recebe um parametro nome via query string
     // - O metodo cria um novo objeto Produto com o nome recebido
     // - O metodo retorna o objeto Produto criado
@@ -45,18 +44,23 @@ public class ProdutoController {
 
 
     //Simplificando o metodo acima usando @RequestBody para receber o objeto Produto diretamente no corpo da requisicao
-
+    //@Valid para validar o objeto Produto com base nas anotacoes de validacao definidas na classe Produto
     @PostMapping
-    public @ResponseBody Produto novoProduto( Produto produto ){
+    public @ResponseBody Produto novoProduto(@Valid Produto produto) {
         produtoRepository.save(produto);
-        return  produto;
+        return produto;
     }
 
 
+    // - O metodo retorna todos os produtos cadastrados no banco de dados
+    @GetMapping
+    public  List<Produto> todosOsProdutos(){
+        return produtoRepository.findAll();
+    }
 
 
     @DeleteMapping
-    public  Produto deletarProduto(@RequestParam int id){
+    public Produto deletarProduto(@RequestParam int id) {
         Produto produto = produtoRepository.findById(id).orElseThrow();
         produtoRepository.delete(produto);
         return produto;

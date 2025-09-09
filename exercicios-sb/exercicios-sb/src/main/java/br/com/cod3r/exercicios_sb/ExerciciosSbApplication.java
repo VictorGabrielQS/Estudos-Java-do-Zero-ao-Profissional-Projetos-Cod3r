@@ -7,8 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ExerciciosSbApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ExerciciosSbApplication.class, args);
-        System.out.println("cu sujo do meu namorado");
+        SpringApplication.run(ExerciciosSbApplication.class, args);
+        System.out.println("Conexão com o banco de dados estabelecida...");
+
+
 	}
 
 }
