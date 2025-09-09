@@ -5,9 +5,13 @@ import br.com.cod3r.exercicios_sb.models.Produto;
 import br.com.cod3r.exercicios_sb.repository.ProdutoRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 // -- Controller responsavel por gerenciar produtos
 // - A anotacao @RestController indica que esta classe e um controlador REST
@@ -45,8 +49,8 @@ public class ProdutoController {
 
     //Simplificando o metodo acima usando @RequestBody para receber o objeto Produto diretamente no corpo da requisicao
     //@Valid para validar o objeto Produto com base nas anotacoes de validacao definidas na classe Produto
-    @PostMapping
-    public @ResponseBody Produto novoProduto(@Valid Produto produto) {
+    @RequestMapping(method = {RequestMethod.POST , RequestMethod.PUT} )
+    public @ResponseBody Produto salvarProduto(@Valid Produto produto) {
         produtoRepository.save(produto);
         return produto;
     }
@@ -59,11 +63,46 @@ public class ProdutoController {
     }
 
 
-    @DeleteMapping
-    public Produto deletarProduto(@RequestParam int id) {
-        Produto produto = produtoRepository.findById(id).orElseThrow();
-        produtoRepository.delete(produto);
+
+    // - O metodo Busca Utiliza paginação
+    @GetMapping("pagina/{numeroPagina}/{qtdePagina}")
+    public Page<Produto> obterProdutoPorPagina( @PathVariable int numeroPagina , @PathVariable int qtdePagina){
+        Pageable page = PageRequest.of(numeroPagina, qtdePagina);
+        return produtoRepository.findAll(page);
+    }
+
+
+    // - O metodo Busca itens por nome
+    @GetMapping(path = "nome/{parteNome}")
+    public List<Produto> obterProdutoPorNome(@PathVariable String parteNome){
+        return  produtoRepository.findByNomeContainingIgnoreCase(parteNome);
+    }
+
+
+
+    // - Busca processos pelo ID
+    @GetMapping(path = "/{id}")
+    public Optional<Produto> buscarProdutoPorId(@PathVariable int id){
+        return produtoRepository.findById(id);
+    }
+
+
+/*
+    // - O metodo altera um produto no banco de dados
+    @PutMapping
+    public Produto atualizarProduto(Produto produto){
+        produtoRepository.save(produto);
         return produto;
     }
+*/
+
+
+    // - O metodo deleta um processo pelo ID
+    @DeleteMapping(path = "/{id}")
+    public String removerProduto(@PathVariable int id) {
+        produtoRepository.deleteById(id);
+        return "Produto removido com Sucesso";
+    }
+
 
 }
