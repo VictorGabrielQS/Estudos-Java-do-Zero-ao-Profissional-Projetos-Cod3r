@@ -1,0 +1,9 @@
+
+
+### 🧩 Desafio 2 — Funcionários com hierarquia
+
+- Crie uma **classe abstrata `Funcionario`** com atributos `nome` e `salario`.
+- Crie subclasses `Gerente` e `Vendedor`, cada uma com seu cálculo de bônus (`abstract double calcularBonus()`).
+- Mostre o bônus de cada um.
+
+➡️ *Usa herança + classe abstrata.*

@@ -1,0 +1,7 @@
+### 🧩 Desafio 3 — Notificações Mistas
+
+- Crie uma **interface `Notificavel`** com método `enviarMensagem(String mensagem)`.
+- Crie classes `EmailService` e `WhatsAppService`.
+- Crie uma classe `SistemaAlerta` que recebe uma lista de `Notificavel` e chama `enviarMensagem` em todos.
+
+➡️ *Usa interface + polimorfismo em lista.*
