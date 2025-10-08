@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/18_Spring_Boot" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/4_Java_basico_intermediario" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Teste" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_Java_Avancado" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

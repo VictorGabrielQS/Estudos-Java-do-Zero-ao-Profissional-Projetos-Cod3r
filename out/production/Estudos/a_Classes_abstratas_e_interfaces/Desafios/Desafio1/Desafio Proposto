@@ -1,0 +1,9 @@
+
+
+### 🧩 Desafio 1 — Sistema de Pagamento
+
+- Crie uma interface `Pagamento` com método `processarPagamento()`.
+- Crie duas classes que implementam: `PixPagamento` e `CartaoPagamento`.
+- Faça um método que recebe uma `List<Pagamento>` e processa todos.
+
+➡️ *Usa polimorfismo + interface.*
