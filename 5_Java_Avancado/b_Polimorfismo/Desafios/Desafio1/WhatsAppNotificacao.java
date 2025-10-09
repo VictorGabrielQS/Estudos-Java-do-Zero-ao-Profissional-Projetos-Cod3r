@@ -4,7 +4,7 @@ public class WhatsAppNotificacao implements Notificavel{
 
     @Override
     public void enviar(String msg) {
-        System.out.println("Enviando Mensagem pelo WhatsApp :");
+        System.out.println("🟢 Enviando Mensagem pelo WhatsApp : " + msg);
     }
 
 }

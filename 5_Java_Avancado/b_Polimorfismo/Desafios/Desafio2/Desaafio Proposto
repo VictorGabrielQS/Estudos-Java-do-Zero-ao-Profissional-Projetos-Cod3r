@@ -1,0 +1,7 @@
+🧩 Desafio 2 — Sistema de Transporte
+
+Crie uma classe abstrata Transporte com método mover().
+Crie classes Carro, Bicicleta e Avião, cada uma com seu próprio comportamento no mover().
+Crie um método que recebe uma lista de Transporte e executa mover() em todos.
+
+➡️ Usa herança + polimorfismo em lista.

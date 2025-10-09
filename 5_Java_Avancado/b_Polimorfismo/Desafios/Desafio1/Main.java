@@ -9,7 +9,20 @@ public class Main {
 
         List<Notificavel> listaNotificacoes = new ArrayList<>();
 
-        Notificavel notificação = new EmailNotificacao();
+        Notificavel notificacao = new EmailNotificacao();
+        listaNotificacoes.add(notificacao);
+
+        Notificavel notificacao2 = new SmsNotificacao();
+        listaNotificacoes.add(notificacao2);
+
+        Notificavel notificacao3 = new WhatsAppNotificacao();
+        listaNotificacoes.add(notificacao3);
+
+
+        //Classe de alertas
+
+        SistemaAlerta sistema = new SistemaAlerta();
+        sistema.enviarNotificacoes(listaNotificacoes);
 
     }
 }

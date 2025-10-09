@@ -1,0 +1,10 @@
+
+🧩 Desafio 1 — Sistema de Notificações
+
+
+Crie uma interface Notificavel com método enviar(String msg).
+Crie classes EmailNotificacao, SmsNotificacao e WhatsAppNotificacao.
+Faça um método que recebe uma lista de Notificavel e chama enviar() em todas.
+
+
+➡️ Usa interface + polimorfismo dinâmico (igual ao dia a dia no Spring Boot).
