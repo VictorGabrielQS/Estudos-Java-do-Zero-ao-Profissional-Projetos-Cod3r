@@ -1,0 +1,13 @@
+🔹 Desafio 2 — Sistema de Veículos
+
+Crie:
+
+Uma classe Veiculo com marca e ligar().
+
+Subclasses: Carro, Moto, Caminhao.
+
+Cada um sobrescreve ligar() com uma mensagem diferente.
+
+Crie uma lista List<Veiculo> e percorra com forEach (lambda), mostrando qual veículo está ligando.
+
+💡 Esse exercício mostra herança + polimorfismo + lambdas.

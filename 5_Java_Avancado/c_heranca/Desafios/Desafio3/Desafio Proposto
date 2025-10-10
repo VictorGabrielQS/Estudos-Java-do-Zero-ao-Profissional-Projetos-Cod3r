@@ -1,0 +1,11 @@
+🔹 Desafio 3 — Loja Online
+
+Crie:
+
+Uma classe Produto com nome e preco.
+
+Subclasses: ProdutoDigital (com tamanhoEmMB) e ProdutoFisico (com peso).
+
+Um método calcularFrete() deve existir apenas nos produtos físicos.
+
+Simule a criação de uma lista de produtos e exiba os dados de cada tipo.

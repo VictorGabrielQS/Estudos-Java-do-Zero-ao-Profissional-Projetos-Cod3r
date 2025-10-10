@@ -1,18 +1,26 @@
 package b_Polimorfismo.Desafios.Desafio3;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Calcular {
     public static void main(String[] args) {
-        Operacao soma = new Soma();
-        soma.executar(5, 3);
 
-        Operacao subtracao = new Subtracao();
-        subtracao.executar(5, 3);
+        List<Operacao> listaDeOperacoes = new ArrayList<>();
 
-        Operacao multiplicacao = new Multiplicacao();
-        multiplicacao.executar(5, 3);
+        listaDeOperacoes.add(new Soma());
+        listaDeOperacoes.add(new Subtracao());
+        listaDeOperacoes.add(new Multiplicacao());
+        listaDeOperacoes.add(new Divisao());
 
-        Operacao divisao = new Divisao();
-        divisao.executar(5, 3);
+        double a = 10;
+        double b = 5;
+
+        for (Operacao o : listaDeOperacoes){
+            double resultado = o.executar(a , b);
+            System.out.println(o.getClass().getSimpleName() + " - " + resultado);
+        }
+
     }
 }

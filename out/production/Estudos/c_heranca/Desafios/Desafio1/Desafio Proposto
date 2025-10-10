@@ -1,0 +1,15 @@
+🔹 Desafio 1 — Cadastro de Funcionários
+
+Crie:
+
+Uma classe Funcionario com nome e salario.
+
+Duas subclasses: Gerente e Estagiario.
+
+O Gerente tem um bônus fixo de 2000 no salário.
+
+O Estagiario ganha 50% do salário base.
+
+Use herança e sobrescrita de método para calcular o salário final.
+
+💡 Dica: método double calcularSalario() deve se comportar diferente em cada tipo.
