@@ -1,0 +1,11 @@
+🔹 Desafio 3 — App de Usuários (L e I)
+
+Crie:
+
+Uma interface Usuario com métodos genéricos.
+
+Duas classes: Admin e Cliente.
+
+Admin pode banir usuários, mas Cliente não.
+
+Ajuste o design usando interface segregation e liskov substitution corretamente.

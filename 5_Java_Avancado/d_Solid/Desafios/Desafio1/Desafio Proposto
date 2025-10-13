@@ -1,0 +1,12 @@
+🔹 Desafio 1 — Refatorar uma classe “bagunçada”
+
+Crie uma classe LojaService que:
+
+Cadastra produtos,
+
+Calcula frete,
+
+Envia e-mail de confirmação.
+
+Depois, aplique o princípio da responsabilidade única (S), separando em classes corretas:
+ProdutoService, FreteService, EmailService.

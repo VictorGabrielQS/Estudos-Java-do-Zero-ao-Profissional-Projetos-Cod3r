@@ -1,0 +1,11 @@
+🔹 Desafio 2 — Sistema de Pagamentos (O e D)
+
+Crie:
+
+Uma interface Pagamento com método processar(double valor).
+
+Implementações: PixPagamento, CartaoCreditoPagamento, BoletoPagamento.
+
+Uma classe PagamentoService que não conhece as implementações concretas, apenas a interface.
+
+Simule a injeção de dependência e o uso de cada tipo de pagamento.
