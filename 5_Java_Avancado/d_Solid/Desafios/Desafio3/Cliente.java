@@ -8,6 +8,11 @@ public class Cliente implements Usuario {
     }
 
     @Override
+    public void atualizarPerfil() {
+        System.out.println("Perfil do cliente atualizado!");
+    }
+
+    @Override
     public void realizarLogin(String nomeUsuario) {
         System.out.println("👨 Clinte se logando ... ");
         System.out.println("Bem Vindo "+ nomeUsuario);
