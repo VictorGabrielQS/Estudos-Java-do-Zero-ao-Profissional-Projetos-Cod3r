@@ -1,7 +1,15 @@
 package d_Solid.Desafios.Desafio3;
 
-public interface Cliente extends Usuario {
+public class Cliente implements Usuario {
+    String nomeUsuario;
 
-    // Não precisa implementar Banir Usuario
+    public Cliente(String nomeUsuario) {
+        this.nomeUsuario =  nomeUsuario;
+    }
 
+    @Override
+    public void realizarLogin(String nomeUsuario) {
+        System.out.println("👨 Clinte se logando ... ");
+        System.out.println("Bem Vindo "+ nomeUsuario);
+    }
 }

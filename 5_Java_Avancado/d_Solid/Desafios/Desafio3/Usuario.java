@@ -1,10 +1,6 @@
 package d_Solid.Desafios.Desafio3;
 
-interface Usuario {
+public interface Usuario {
 
-    void login();
-
-    void atualizarPerfil();
-
-    void banirUsuario(String nomeUsuario);
+    void realizarLogin(String nomeUsuario);
 }

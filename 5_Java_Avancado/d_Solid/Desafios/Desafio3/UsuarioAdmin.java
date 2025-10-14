@@ -1,8 +1,9 @@
 package d_Solid.Desafios.Desafio3;
 
-public interface UsuarioAdmin extends Usuario{
+import java.util.List;
 
-    @Override
-    void banirUsuario(String nomeUsuario);
+public interface UsuarioAdmin extends Usuario {
+
+    void banirUsuario(List<Usuario> listaDeUsuarios, String nomeUsuario);
 
 }
